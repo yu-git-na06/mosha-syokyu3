@@ -45,7 +45,7 @@ h1,h2,p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 60px);
 }
 
 .header-logo{
@@ -229,7 +229,7 @@ h1,h2,p{
     /* common-mv */
     .common-wrapper{
         max-width: 800px;
-        margin: 0 10px;
+        margin: 0 30px;
     }
     
       /* header-mv */
@@ -248,6 +248,10 @@ h1,h2,p{
          display: block;
      }
 
+    .header-nav-btn a {
+        color: white;
+    }
+    
     /* main-view-mv */
     .main-view{
     margin-top: 60px;
@@ -333,13 +337,13 @@ h1,h2,p{
     /*ハンバーガーボタン*/
       .hamburger__btn{
           display: block;
-          margin: 20px;
+          margin: 20px 0;
       }
 
     /*js挙動*/
     .add-header-nav{
         position: fixed;
-        top: 0;
+        top: 60px;
         left: 0;
         background-color: white;
         display: block;
@@ -354,17 +358,6 @@ h1,h2,p{
         margin: 50px 0 0 20px;
         font-size: 18px;
         color: black;
-    }
-    
-    .add-modal-sp{
-        position: fixed; /* *1 */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        display: block; /* *3 */
-        background-color: #000000aa;
-        z-index: 1; /* ※2 */
     }
 
 }
